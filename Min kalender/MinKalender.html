@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="MinKalender.css">
+        <script src="MinKalender.js"></script>
+    </head>
+    <body onload="start();">
+
+        <div class="kalender">
+            <button class="prev" onclick="prevMonth()">
+                <span class="text">Prev</span>
+            </button>
+            
+            <button class="next" onclick="nextMonth()">
+                <span class="text">Next</span>
+            </button>
+
+            <span class="monthtext" id="currentMonth"></span>
+            <span class="yeartext" id="currentYear"></span>
+            <table>
+                <tr>
+                    <th class="day-txt">Mån</th>
+                    <th class="day-txt">Tis</th>
+                    <th class="day-txt">Ons</th>
+                    <th class="day-txt">Tor</th>
+                    <th class="day-txt">Fre</th>
+                    <th class="day-txt">Lör</th>
+                    <th class="day-txt">Sön</th>
+                </tr>
+                <tr>
+                    <th onmouseover="changeColor()" id="ruta1"></th>
+                    <th id="ruta2"></th>
+                    <th id="ruta3"></th>
+                    <th id="ruta4"></th>
+                    <th id="ruta5"></th>
+                    <th id="ruta6"></th>
+                    <th id="ruta7"></th>
+                </tr>
+                <tr>
+                    <th id="ruta8"></th>
+                    <th id="ruta9"></th>
+                    <th id="ruta10"></th>
+                    <th id="ruta11"></th>
+                    <th id="ruta12"></th>
+                    <th id="ruta13"></th>
+                    <th id="ruta14"></th>
+                </tr>
+                <tr>
+                    <th id="ruta15"></th>
+                    <th id="ruta16"></th>
+                    <th id="ruta17"></th>
+                    <th id="ruta18"></th>
+                    <th id="ruta19"></th>
+                    <th id="ruta20"></th>
+                    <th id="ruta21"></th>
+                </tr>
+                <tr>
+                    <th id="ruta22"></th>
+                    <th id="ruta23"></th>
+                    <th id="ruta24"></th>
+                    <th id="ruta25"></th>
+                    <th id="ruta26"></th>
+                    <th id="ruta27"></th>
+                    <th id="ruta28"></th>
+                </tr>
+                <tr>
+                    <th id="ruta29"></th>
+                    <th id="ruta30"></th>
+                    <th id="ruta31"></th>
+                    <th id="ruta32"></th>
+                    <th id="ruta33"></th>
+                    <th id="ruta34"></th>
+                    <th id="ruta35"></th>
+                </tr>
+                <tr>
+                    <th id="ruta36"></th>
+                    <th id="ruta37"></th>
+                    <th id="ruta38"></th>
+                    <th id="ruta39"></th>
+                    <th id="ruta40"></th>
+                    <th id="ruta41"></th>
+                    <th id="ruta42"></th>
+                </tr>
+            </table>
+        </div>
+        <div class="back-btn">
+            <a class="back-btn-txt" href="../Hemsida/Index/Index.html">Back</a>
+        </div>
+    </body>
+</html>

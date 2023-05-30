@@ -1,0 +1,144 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table {
+    background: red;
+    width: 100%;
+    height: 100%;
+    border: solid 5px red;
+}
+
+tr {
+    height: 10%;
+}
+
+th {
+    width: 10%;
+    border: solid 5px red;
+
+}
+
+.prev {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: -15%;
+    left: 20%;
+    padding: 20px 40px;
+    background-color: red;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.prev:hover .text {
+    background-color: red;
+}
+
+.prev:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+
+
+.next {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: -15%;
+    left: 80%;
+    padding: 20px 40px;
+    background-color: red;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.next:hover .text {
+    background-color: red;
+}
+
+.next:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+
+
+.text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    background-color: red;
+    color: white;
+    transition: 0.5s;
+}
+
+.text:hover {
+    background-color: red;
+}
+
+.monthtext {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: -15%;
+    left: 50%;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+}
+
+.yeartext {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: -30%;
+    left: 50%;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+}
+
+.textruta {
+    border: solid 2px rgba(255, 255, 255, 1);
+}
+
+.kalender {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+}
+
+.day-txt {
+    color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+}
+
+.back-btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.back-btn-txt {
+    color: rgba(20, 20, 20, 1);
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.back-btn-txt:hover {
+    background-color: rgba(200, 200, 200, 1);
+}
