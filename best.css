@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+#menu {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    margin: 0 50px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.lines {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: red;
+}
+
+#bar-1 {
+    position: absolute;
+    top: 0%;
+    transition: all 0.5s;
+}
+
+#bar-2 {
+    position: absolute;
+    top: 40%;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+#bar-3 {
+    position: absolute;
+    top: 80%;
+    transition: all 0.5s;
+}
+
+#sidebar {
+    position: relative;
+    width: 20%;
+    height: 100vh;
+    background-color: red;
+    transform: translateX(-110%);
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+ul {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+
+.list {
+    position: relative;
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.listmenu {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px 40px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+}
+
+.fa-caret-down {
+    position: absolute;
+    color: white;
+    top: 40%;
+    left: 80%;
+    font-size: 20px;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+#photo {
+    background-image: url(jula1.jpg);
+    top: 10%;
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    position: absolute;
+}
+
+.btn {
+    width: 50px;
+    height: 70px;
+    background-color: black;
+    border-radius: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#next {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    float: left;
+    left: 95%;
+}
+
+#prev {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 5%;
+}
+
+.right-arrow-1,
+.right-arrow-2 {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 10%;
+    background-color: white;
+}
+
+.right-arrow-1 {
+    top: 40%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.right-arrow-2 {
+    top: 60%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.left-arrow-1,
+.left-arrow-2 {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 10%;
+    background-color: white;
+}
+
+.left-arrow-1 {
+    top: 40%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.left-arrow-2 {
+    top: 60%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+
+
+/* --------------------------Responsive---------------------------- */
+
+@media only screen and (max-width: 1000px) {
+    #sidebar {
+        width: 40%;
+    }
+
+    .logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    #menu {
+        width: 40px;
+        height: 40px;
+        margin: 0px 50px;
+    }
+
+    .listmenu {
+        top: 30%;
+    }
+
+    #photo {
+        top: 10%;
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .btn {
+        border-radius: 5px;
+        width: 40px;
+        height: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    #sidebar {
+        width: 100%;
+    }
+
+    .logo {
+        width: 50px;
+        height: 25px;
+    }
+
+    #menu {
+        width: 30px;
+        height: 30px;
+        margin: 0px 35px;
+    }
+
+    .listmenu {
+        top: 40%;
+    }
+
+    #photo {
+        top: 10%;
+        width: 100%;
+        height: 30vh;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .btn {
+        border-radius: 3px;
+        width: 20px;
+        height: 40px;
+    }
+}

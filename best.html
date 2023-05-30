@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <link rel="stylesheet" href="best.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="best.js"></script>
+    <script src="https://kit.fontawesome.com/462b140f1b.js" crossorigin="anonymous"></script>
+</head>
+<body onload="startSlide()">
+    <div class="navbar">
+            <img class="logo" src="Jula-logo.png" alt="">
+        <div id="menu" onclick="menuAnimation()">
+            <div class="lines" id="bar-1"></div>
+            <div class="lines" id="bar-2"></div>
+            <div class="lines" id="bar-3"></div>
+        </div>
+    </div>
+
+    <div id="photo">
+        <div id="prev" class="btn" onclick="changeSlide(false)">
+            <div class="left-arrow-1">
+
+            </div>
+            <div class="left-arrow-2">
+
+            </div>
+        </div>
+    
+        <div id="next" class="btn" onclick="changeSlide(true)">
+            <div class="right-arrow-1">
+
+            </div>
+            <div class="right-arrow-2">
+
+            </div>
+        </div>
+    </div>
+        
+        
+
+    <div id="sidebar">
+       <div class="listmenu">
+            <li class="list"><a href="#">Produkter</a></li>
+            <li class="list"><a href="">Insperation</a></li>
+            <li class="list"><a href="">Nyheter</a></li>
+            <li class="list"><a href="">Varumärken</a></li>
+            <li class="list"><a href="">Erbjudanden</a></li>
+            <li class="list"><a href="">Tokbilligt</a></li>
+       </div>
+    </div>
+</body>
+</html>
